@@ -5,9 +5,8 @@ desktop = winshell.desktop()
 absolute_path = os.path.abspath(__file__)
 print("Directory Path: " + os.path.dirname(absolute_path))
 dirpath=os.path.dirname(absolute_path)
-src=dirpath+"\\invokemessagebot.exe"
+src=dirpath+"\\bot.exe"
 print(src)
-# src = "C:\CITI\desktopshortcut\exefilegeneration\exefilewebbrowser.exe"
-dst = desktop+"\\invokemessagebot.exe"
+dst = desktop+"\\bot.exe"
 print(dst)
 print(shutil.copy(src, dst))
